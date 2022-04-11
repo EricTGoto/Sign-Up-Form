@@ -98,6 +98,7 @@ input {
     -webkit-appearance: none;
     border-radius: 3px;
     border: 1px solid rgb(26, 25, 25);
+    margin-right: 10px;
 }
 
 input:active,
@@ -121,7 +122,8 @@ input:invalid {
     border-color: red;
 }
 
-input[type="tel"]:invalid:not(:placeholder-shown) + span::before{
+input[type="tel"]:invalid:not(:placeholder-shown) + span::before,
+input[type="password"]:invalid:not(:placeholder-shown) + span::before {
     content: '✖';
     color: red;
 }

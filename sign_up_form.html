@@ -45,11 +45,13 @@
           </div>
           <div class="input">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="Min 8 characters" required>
+            <input type="password" name="password" id="password" placeholder="Min 8 characters" minlength="8" required>
+            <span></span>
           </div>
           <div class="input">
             <label for="confirm_password">Confirm Password</label>
-            <input type="password" name="confirm_password" id="confirm_password" placeholder="Min 8 characters" required>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Min 8 characters" minlength="8" required>
+            <span></span>
           </div>
         </div>
         <button type="submit">Create Account</button>

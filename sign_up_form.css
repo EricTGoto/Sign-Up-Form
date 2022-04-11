@@ -142,6 +142,11 @@ button[type="submit"] {
     padding: 8px 30px;
 }
 
+button[type="submit"]:hover,
+input:hover {
+    outline: 1px solid #888888;
+}
+
 .login {
     position: absolute;
     font-size: 16px;

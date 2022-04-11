@@ -10,7 +10,7 @@ This is a project to practice HTML forms, and a variety of CSS (pseudo-classes, 
 * if input is invalid, the input shows a red border
 * form submission button is placed outside of the form "container" by using absolute positioning, so is the "already have an account" text
 
-To do:
+<h3>To do:</h3>
 * validation for phone number (don't allow anything but numbers)
 * min password length
 * min password indicator if password is too short

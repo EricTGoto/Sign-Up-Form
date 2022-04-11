@@ -9,7 +9,7 @@ html, body {
     overflow: hidden;
 }
 
-body {
+body, .left, .right {
     display: flex;
 }
 
@@ -18,12 +18,7 @@ a {
     color: white;
 }
 
-.left, .right {
-    display: flex;
-}
-
 .left {
-    display: flex;
     justify-content: center;
     position: relative;
     flex: 1 0 0;
@@ -112,8 +107,23 @@ input:focus {
     outline: solid 0.5px blue;
 }
 
+input + span {
+    position: relative;
+}
+
+input + span::before {
+    position: absolute;
+    left: 217px;
+    top: -8px;
+}
+
 input:invalid {
     border-color: red;
+}
+
+input[type="tel"]:invalid:not(:placeholder-shown) + span::before{
+    content: '✖';
+    color: red;
 }
 
 input:placeholder-shown {
